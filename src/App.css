@@ -40,7 +40,7 @@
   color: white;
 }
 
-.weather__info {
+.weather-cards {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +48,7 @@
   gap: 3rem;
 }
 
-.weather-cards {
+.weather-card {
   background-color: #ebf2ed;
   box-shadow: 0 0 5px 0px black;
   display: flex;
