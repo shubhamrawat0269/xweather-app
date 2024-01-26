@@ -69,15 +69,17 @@ function App() {
           </button>
         </div>
         <div className="weather-cards">
-          {isLoading && <p>Loading data…</p>}
+          {/* {isLoading && <p>Loading data…</p>} */}
 
-          {Object.keys(data).length !== 0 && (
+          {Object.keys(data).length !== 0 ? (
             <>
               <Card name="Temperature" value={data.temp_c} />
               <Card name="Humidity" value={data.humidity} />
               <Card name="Condition" value={data.condition.text} />
               <Card name="Wind Speed" value={data.wind_kph} />
             </>
+          ) : (
+            isLoading && <p>Loading data…</p>
           )}
         </div>
       </div>
