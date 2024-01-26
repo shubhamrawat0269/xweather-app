@@ -68,7 +68,7 @@ function App() {
             Search
           </button>
         </div>
-        <div className="weather-cards">
+        <div className="weather__info">
           {isLoading && <p>Loading data…</p>}
 
           {Object.keys(data).length !== 0 && (
