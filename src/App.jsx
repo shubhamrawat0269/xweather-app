@@ -18,7 +18,7 @@ const Card = ({ name, value }) => {
   }
 
   return (
-    <div className="weather-card">
+    <div className="weather-cards">
       <h2>{name}</h2>
       <p>{value}</p>
     </div>
@@ -68,7 +68,7 @@ function App() {
             Search
           </button>
         </div>
-        <div className="weather__info">
+        <div className="weather-cards">
           {isLoading && <p>Loading data…</p>}
 
           {Object.keys(data).length !== 0 && (
