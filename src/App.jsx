@@ -79,7 +79,7 @@ function App() {
               <Card name="Wind Speed" value={data.wind_kph} />
             </>
           ) : (
-            isLoading && <p>Loading data…</p>
+            isLoading && <p>Loading data...</p>
           )}
         </div>
       </div>
